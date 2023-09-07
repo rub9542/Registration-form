@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@100&display=swap");
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Josefin Sans";
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+  .title {
+    font-size: 266%;
+    color: #e50ebf;
+    font-weight: 800;
+    font-family: "Josefin Sans";
+  }
+  .content-section {
+    min-height: 10em;
+    max-height: 23em;
+    overflow-y: auto;
+    padding: 7% 0 4% 0;
+
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    min-width: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    form {
+      width: 82%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      align-items: center;
+      max-width: unset !important;
+      textarea {
+        resize: none;
+      }
+      .ant-input {
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      }
+      label {
+        font-family: "Josefin Sans";
+      }
+      .ant-form-item {
+        width: 100%;
+        .ant-form-item-row {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .ant-form-item-control {
+            max-width: 60%;
+            .ant-slider {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .bck-btn {
+        cursor: pointer;
+        padding: 0% 3%;
+        border-radius: 10px;
+        margin-right: 2%;
+        font-size: 156%;
+        color: #e50ebf;
+        
+        font-weight: 800;
+        font-family: "Josefin Sans";
+        display: flex;
+        align-items: center;
+        &:hover{
+background: rgb(229 14 191 / 31%);
+          // box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
+      }
+      .sbt-btn {
+        top: 93%;
+        cursor: pointer;
+
+        right: 3%;
+        position: absolute;
+        .ant-row {
+          display: flex;
+          justify-content: flex-end;
+          .ant-form-item-control-input-content {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    .content-section {
+      height: 90%;
+      width: 10%;
+      min-width: 20em;
+      max-height: 35em;
+      form {
+        width: 100%;
+        min-height: 36em;
+        justify-content: flex-start;
+        .sbt-btn {
+          top: 99% !important;
+        }
+        .ant-form-item {
+          width: 90%;
+          .ant-form-item-control {
+            max-width: 100% !important;
+          }
+
+          .ant-form-item-row {
+            .ant-form-item-label {
+              display: flex;
+              justify-content: center;
+            }
+          }
+          label {
+            font-size: 160%;
+          }
+          input,
+          textarea {
+            font-size: 200%;
+          }
+          button {
+            width: 34%;
+            height: 5%;
+            font-family: "Josefin Sans";
+            font-size: 163%;
+          }
+          .ant-radio-group {
+            width: 74%;
+            .ant-radio-wrapper {
+              width: 76%;
+              span {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 375px) and (max-width: 480px) {
+    .App {
+      .content-section {
+        max-height: 46em !important;
+        min-width: 22em !important;
+      }
+    }
+    @media (min-width: 400px) and (max-width: 413px) {
+      .App {
+        .content-section {
+          min-width: 23em !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 281px) {
+    .App .content-section {
+      min-width: 15em !important;
+      form .ant-form-item {
+        label {
+          font-size: 145% !important;
+        }
+        button {
+          width: 40% !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .App {
+    height: 147vh !important;
+    .content-section {
+      height: 84%;
+      width: 10%;
+      min-width: 30em !important;
+      max-height: unset !important;
+      form {
+        width: 94%;
+        justify-content: flex-start !important;
+        .ant-form-item {
+          width: 100%;
+          .ant-form-item-control {
+            max-width: unset !important;
+          }
+          .ant-form-item-row {
+            justify-content: center;
+            .ant-form-item-label {
+              text-align: center;
+            }
+          }
+
+          label {
+            font-size: 216%;
+          }
+          input,
+          textarea {
+            font-size: 200%;
+          }
+          button {
+            width: 34%;
+            height: 5%;
+            font-family: "Josefin Sans";
+            font-size: 163%;
+          }
+          .ant-radio-group {
+            width: 100%;
+            display: flex;
+            .ant-radio-wrapper {
+              width: 76%;
+              span {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+
+        .sbt-btn {
+          top: 95%;
+          right: 2%;
+          position: absolute;
+          width: 62% !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .App {
+    height: 147vh !important;
+    .content-section {
+      height: 84%;
+      width: 10%;
+      min-width: 48em !important;
+      max-height: unset !important;
+      form {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between !important;
+        .ant-form-item {
+          height: 13%;
+          display: flex;
+          flex-direction: column;
+          .ant-form-item-row {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .ant-form-item-control {
+              display: flex;
+              width: 66% !important;
+              max-width: unset !important;
+              justify-content: center;
+              .ant-form-item-control-input {
+                width: 100%;
+                .ant-form-item-control-input-content {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          label {
+            font-size: 216%;
+          }
+          input,
+          textarea {
+            font-size: 200%;
+          }
+          button {
+            width: 34%;
+            height: 5%;
+            font-family: "Josefin Sans";
+            font-size: 163%;
+          }
+          .ant-radio-group {
+            width: 52%;
+
+            .ant-radio-wrapper {
+              width: 76%;
+              span {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+        .sbt-btn {
+          top: 97% !important;
+          width: 53%;
+          right: 1% !important;
+          position: absolute;
+          height: 4% !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+}
