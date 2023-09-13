@@ -1,12 +1,16 @@
 import logo from "./logo.svg";
 import "./App.scss";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageOne from "./Components/PageOne";
 import PageTwo from "./Components/PageTwo";
 import PageThree from "./Components/PageThree";
 import PageFour from "./Components/PageFour";
+import pageReducer from "./Components/redux/Pagereducer";
+import { useSelector } from "react-redux";
 
 function App() {
+  const page = useSelector(pageReducer);
+console.log('page in app', page)
   return (
     <div className="App">
         <div className="title">Sign Up </div>

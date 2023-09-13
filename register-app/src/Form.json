@@ -1,0 +1,156 @@
+[
+  {
+    "label": "name",
+    "labelName": "First Name",
+    "type": "string",
+    "pattern": "[A-Za-z]",
+    "minLength": "3",
+    "maxLength": "30",
+    "pageNumber": "1"
+  },
+  {
+    "label": "Email",
+    "labelName": "Email",
+    "type": "email",
+    "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$",
+    "pageNumber": "1"
+  },
+  {
+    "label": "address",
+    "labelName": "Address",
+    "type": "string",
+    "pattern": "[A-Za-z0-9]",
+    "minLength": "5",
+    "maxLength": "50",
+    "pageNumber": "1"
+  },
+  {
+    "label": "phoneNumber",
+    "labelName": "Phone Number",
+    "type": "string",
+    "pattern": "[0-9]",
+    "minLength": "10",
+    "maxLength": "15",
+    "pageNumber": "1"
+  },
+  {
+    "label": "birthdate",
+    "labelName": "Birthdate",
+    "type": "date",
+    "pageNumber": "1"
+  },
+  {
+    "label": "gender",
+    "labelName": "Gender",
+    "type": "options",
+    "options": ["Male", "Female", "Other"],
+    "pageNumber": "1"
+  },
+
+  {
+    "label": "companyName",
+    "labelName": "Company Name",
+    "type": "string",
+    "pattern": "[A-Za-z0-9]",
+    "minLength": "3",
+    "maxLength": "30",
+    "pageNumber": "2"
+  },
+  {
+    "label": "CIN",
+    "labelName": "CIN",
+    "type": "number",
+    "pattern": "[0-9]",
+    "pageNumber": "2"
+  },
+
+
+  {
+    "label": "productCode",
+    "labelName": "Product Code",
+    "type": "alphanumeric",
+    "pattern": "[A-Za-z0-9]",
+    "minLength": "6",
+    "maxLength": "12",
+    "pageNumber": "3"
+  },
+  {
+    "label": "quantity",
+    "labelName": "Quantity",
+    "type": "number",
+    "pattern": "[0-9]",
+    "pageNumber": "3"
+  },
+  {
+    "label": "orderNumber",
+    "labelName": "Order Number",
+    "type": "string",
+    "pattern": "[A-Za-z0-9]",
+    "minLength": "8",
+    "maxLength": "15",
+    "pageNumber": "3"
+  },
+  {
+    "label": "paymentMethod",
+    "labelName": "Payment Method",
+    "type": "options",
+    "options": ["Credit Card", "PayPal", "Bank Transfer"],
+    "pageNumber": "3"
+  },
+
+  
+  {
+    "label": "membershipLevel",
+    "labelName": "Membership Level",
+    "type": "string",
+    "pattern": "[A-Za-z]",
+    "minLength": "2",
+    "maxLength": "20",
+    "pageNumber": "4"
+  },
+  {
+    "label": "subscriptionType",
+    "labelName": "Subscription Type",
+    "type": "options",
+    "options": ["Basic", "Pro", "Premium"],
+    "pageNumber": "4"
+  },
+  {
+    "label": "registrationDate",
+    "labelName": "Registration Date",
+    "type": "date",
+    "pageNumber": "4"
+  },
+  {
+    "label": "trackingNumber",
+    "labelName": "Tracking Number",
+    "type": "alphanumeric",
+    "pattern": "[A-Za-z0-9]",
+    "minLength": "10",
+    "maxLength": "20",
+    "pageNumber": "4"
+  },
+  {
+    "label": "shipmentStatus",
+    "labelName": "Shipment Status",
+    "type": "options",
+    "options": ["Pending", "Shipped", "Delivered"],
+    "pageNumber": "4"
+  },
+  {
+    "label": "customerFeedback",
+    "labelName": "Customer Feedback",
+    "type": "string",
+    "pattern": "[A-Za-z0-9]",
+    "minLength": "10",
+    "maxLength": "100",
+    "pageNumber": "4"
+  },
+  {
+    "label": "rating",
+    "labelName": "Rating",
+    "type": "number",
+    "pattern": "[0-9]",
+    "pageNumber": "4"
+  }
+]

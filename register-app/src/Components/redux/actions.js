@@ -9,9 +9,15 @@ export const addState = (data) => {
   };
 };
 
-export const getState = (data) => {
-  return {
-    type: GET_STATE,
-    data,
-  };
+
+export const ContentReducer = (state = [], action) => {
+  switch (action.type) {
+    case GET_STATE:
+      return {
+        ...state,
+      };
+    default:
+      return state;
+  }
 };
+// export default ContentReducer;
